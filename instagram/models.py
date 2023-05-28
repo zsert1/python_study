@@ -9,4 +9,6 @@ class Post(models.Model):
     update_at=models.DateTimeField(auto_now=True)
     def message_lenght(self):
         return len(self.message)
+    class Meta:
+        ordering=['-id']
     message_lenght.short_description="메세지 글자수"
