@@ -23,3 +23,6 @@ def post_detail(request, pk):
     reponse = HttpResponse()
     reponse.write('helloWord')
     return reponse
+
+def archives_years(request,year):
+    return HttpResponse(f"{year}년 archive")
